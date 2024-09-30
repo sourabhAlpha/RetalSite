@@ -1,0 +1,34 @@
+@media(min-width: 991px){
+    /* header css */
+    .menu{
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    .menu > li{
+        position: relative;
+    }
+    .menu > li::after{
+        content: '';
+        position: absolute;
+        right: -15px;
+        height: 15px;
+        width: 1px;
+        background-color: #DBDBDB;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .menu > li:nth-last-child(-n+2)::after{
+        display: none;
+    }
+    /* header css */
+}
+
+@media(min-width: 768px){
+    .navbar-expand-md .navbar-nav .dropdown-menu{
+        border-radius: 0;
+        top: 56px;
+    }
+
+}
